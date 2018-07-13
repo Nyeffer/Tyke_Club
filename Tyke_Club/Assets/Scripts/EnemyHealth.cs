@@ -36,7 +36,6 @@ public class EnemyHealth : MonoBehaviour {
 
 		if(curHealth <= 0 && !isDead) {
 			if(Random.RandomRange(0,2) == 1) {
-				GetComponent<Spawn>().enabled = true;
 				Death();
 			} else {
 				Death();
@@ -45,7 +44,6 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void Death() {
-        player.GetComponent<PlayerHealth>().AddGold(100);
 		GetComponent<CapsuleCollider>().enabled = false;
 		isDead = true;
 	}
@@ -53,7 +51,6 @@ public class EnemyHealth : MonoBehaviour {
 	void OnTriggerEnter(Collider col) {
 		if(col.gameObject.tag == "PlayerObjects" && gameObject.tag == "Enemy") {
 			Player_bullet = col.gameObject;
-			TakeDamage(Player_bullet.GetComponent<BulletBehavior>().GetDamage());
 			Destroy(col.gameObject);
 		}
  	}

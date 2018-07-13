@@ -54,12 +54,12 @@ public class Player_Detection : MonoBehaviour {
 						this.transform.Translate (0, 0, moveSpeed * Time.deltaTime);
 					} else {
 						isDamaging = true;
-						childAnim.SetBool("isAttacking", true);
+						// childAnim.SetBool("isAttacking", true);
 						weapon.SetActive(true);
 					} 
 				} else {
 					if (counter <= 0.5f) {
-						childAnim.SetBool("isAttacking", false);
+						// childAnim.SetBool("isAttacking", false);
 						counter = 0;
 						isDamaging = false;
 					} else {
