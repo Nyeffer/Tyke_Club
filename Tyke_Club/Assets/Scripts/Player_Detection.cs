@@ -50,7 +50,7 @@ public class Player_Detection : MonoBehaviour {
 				Vector3 pos = target.transform.position - this.transform.position;
 				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
 				if (!isDamaging) {
-					if (pos.magnitude > 2.5f) {
+					if (pos.magnitude >= 1.5f) {
 						this.transform.Translate (0, 0, moveSpeed * Time.deltaTime);
 					} else {
 						isDamaging = true;
@@ -58,7 +58,7 @@ public class Player_Detection : MonoBehaviour {
 						weapon.SetActive(true);
 					} 
 				} else {
-					if (counter <= 0.5f) {
+					if (counter >= 5f) {
 						// childAnim.SetBool("isAttacking", false);
 						counter = 0;
 						isDamaging = false;

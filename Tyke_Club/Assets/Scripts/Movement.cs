@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour {
 	private Vector3 pos; // Constructor to hold the current Position of this Object
 	
 	void Update () {
-		pos = gameObject.transform.position; // Updating the variable's value
+		pos = gameObject.transform.localPosition; // Updating the variable's value
 		if(Input.GetButton("Horizontal")) { // Whenever the A, D or Left, Right Keys are used it'll move either left or right
 			pos.x += Input.GetAxis("Horizontal") * moveSpeed; // Gets the desired x value
 		}
