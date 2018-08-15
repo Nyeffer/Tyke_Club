@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: 7638d2b97ad33154d865205c549f233a
+guid: a4c751ba09f901a4fb560614d8046f84
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert8
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube20
+    100000: Wall_left
+    100002: //RootNode
+    400000: Wall_left
+    400002: //RootNode
+    2100000: New_White
+    2300000: Wall_left
+    3300000: Wall_left
+    4300000: Wall_left
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

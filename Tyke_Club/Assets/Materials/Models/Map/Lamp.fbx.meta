@@ -1,14 +1,53 @@
 fileFormatVersion: 2
-guid: 7638d2b97ad33154d865205c549f233a
+guid: aa420c348bd9a5b48b2c23563efe8e58
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Lamp_arm_1
+    100004: Lamp_arm_2
+    100006: Lamp_bottom
+    100008: Lamp_hat
+    100010: Lamp_lightblub
+    100012: Lamp_neck_1
+    100014: Lamp_neck_2
+    100016: Lamp_pole
     400000: //RootNode
-    2100000: lambert8
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube20
+    400002: Lamp_arm_1
+    400004: Lamp_arm_2
+    400006: Lamp_bottom
+    400008: Lamp_hat
+    400010: Lamp_lightblub
+    400012: Lamp_neck_1
+    400014: Lamp_neck_2
+    400016: Lamp_pole
+    2100000: New_White
+    2100002: New_Yellow
+    2100004: Gray
+    2300000: Lamp_arm_1
+    2300002: Lamp_arm_2
+    2300004: Lamp_bottom
+    2300006: Lamp_hat
+    2300008: Lamp_lightblub
+    2300010: Lamp_neck_1
+    2300012: Lamp_neck_2
+    2300014: Lamp_pole
+    3300000: Lamp_arm_1
+    3300002: Lamp_arm_2
+    3300004: Lamp_bottom
+    3300006: Lamp_hat
+    3300008: Lamp_lightblub
+    3300010: Lamp_neck_1
+    3300012: Lamp_neck_2
+    3300014: Lamp_pole
+    4300000: Lamp_hat
+    4300002: Lamp_lightblub
+    4300004: Lamp_neck_1
+    4300006: Lamp_neck_2
+    4300008: Lamp_arm_1
+    4300010: Lamp_arm_2
+    4300012: Lamp_pole
+    4300014: Lamp_bottom
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +79,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
