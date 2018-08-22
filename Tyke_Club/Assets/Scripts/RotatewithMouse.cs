@@ -48,6 +48,7 @@ public class RotatewithMouse : MonoBehaviour	{
         // Clamp and apply the local x value first, so as not to be affected by world transforms.
         if (clampInDegrees.x < 360)
             _mouseAbsolute.x = Mathf.Clamp(_mouseAbsolute.x, -clampInDegrees.x * 0.5f, clampInDegrees.x * 0.5f);
+            
  
         // Then clamp and apply the global y value.
         if (clampInDegrees.y < 360)
