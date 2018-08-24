@@ -33,7 +33,6 @@ public class EnemyHealth : MonoBehaviour {
 	public void TakeDamage(int damageDealt) {
 		isDamaged = true;
 		curHealth -= damageDealt;
-
 		if(curHealth <= 0 && !isDead) {
 			if(Random.RandomRange(0,2) == 1) {
 				Death();
@@ -49,10 +48,11 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
-		if(col.gameObject.tag == "PlayerObjects" && gameObject.tag == "Enemy") {
-			Player_bullet = col.gameObject;
-			Destroy(col.gameObject);
+		if(col.gameObject.tag == "Player_Weapon" && gameObject.tag == "Enemy") {
+			GetComponentInParent<Rigidbody>().AddForce(Vector3.back * 1000, ForceMode.Force);
+			GetComponentInParent<Player_Detection>().SetIsSeeking(false);
 		}
+
  	}
 
 	public bool GetisDead() {

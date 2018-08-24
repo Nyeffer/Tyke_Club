@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
+	private BoxCollider col;
+	private GameObject myWeapon;
 
 	public GameObject[] weapon; // Array to store all of the possible Weapon
 

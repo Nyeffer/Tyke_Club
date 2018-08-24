@@ -91,4 +91,8 @@ public class Player_Detection : MonoBehaviour {
 			isSeeking = false;
 		}
  	}
+
+	public void SetIsSeeking(bool seek) {
+		isSeeking = seek;
+	}
 }
