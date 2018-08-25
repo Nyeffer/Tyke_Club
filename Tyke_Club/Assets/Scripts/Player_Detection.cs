@@ -33,7 +33,7 @@ public class Player_Detection : MonoBehaviour {
 		child = GetComponentInChildren<EnemyHealth>().GetisDead();
 		if(child) {
 			childAnim.SetBool("isDead", true);
-			
+			Destroy(gameObject);
 			if(counter >= 10.0f) {
 				counter = 0;
 				Destroy(this.gameObject);

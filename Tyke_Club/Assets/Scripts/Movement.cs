@@ -49,8 +49,7 @@ public class Movement : MonoBehaviour {
 			}
 		}
 		if(!isAble) {
-			if(atk_cd <= 2.2f) {
-				Debug.Log(atk_cd);
+			if(atk_cd <= 1.5f) {
 				atk_cd += Time.deltaTime;
 			} else {
 				AlterCollider(Getweapon(PlayerPrefs.GetInt("Weapon", 0)), false);
