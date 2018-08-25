@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: BlacksmithInteractiveGamesLimited
   productName: Tyke_Club
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -662,9 +662,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 3798ecaa-e57e-4f23-88ed-f654251b9aa6
+  cloudProjectId: 78fee3a8-2ed7-414a-9916-0e04af99c1fe
   projectName: Tyke_Club
-  organizationId: isolgames
+  organizationId: blackbureau
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
